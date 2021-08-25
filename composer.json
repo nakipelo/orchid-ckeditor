@@ -1,0 +1,27 @@
+{
+  "name": "nakipelo/orchid-ckeditor",
+  "description": "CKEditor editor for Laravel Orchid",
+  "type": "library",
+  "require": {
+    "orchid/platform": "^10.13"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Egor Gruzdev",
+      "email": "egorgruzdev@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Nakipelo\\Orchid\\CKEditor\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Nakipelo\\Orchid\\CKEditor\\CKEditorServiceProvider"
+      ]
+    }
+  }
+}
