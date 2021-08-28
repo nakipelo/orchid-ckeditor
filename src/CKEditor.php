@@ -18,7 +18,7 @@ class CKEditor extends Field
 
     public static function make(?string $name = null): Field
     {
-        Dashboard::registerResource('scripts', '//cdn.ckeditor.com/4.6.2/standard/ckeditor.js');
+        Dashboard::registerResource('scripts', config('ckeditor.scripts'));
         Dashboard::registerResource('scripts', route('platform.resource', ['ckeditor','ckeditor.js']));
 
         return (new static())->name($name);

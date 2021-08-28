@@ -2,6 +2,17 @@
 declare(strict_types=1);
 
 return [
+    /**
+     * Скрипты загрузки редактора
+     * @link https://ckeditor.com/ckeditor-4/download/
+     */
+    'scripts' => [
+        '//cdn.ckeditor.com/4.6.2/full/ckeditor.js',
+    ],
+    /**
+     * Настройки редактора по-умолчанию
+     * @link https://ckeditor.com/docs/ckeditor4/latest/
+     */
     'options' => [
         'filebrowserImageBrowseUrl' => '/filemanager?type=Images',
         'filebrowserImageUploadUrl' => '/filemanager/upload?type=Images&_token=',
