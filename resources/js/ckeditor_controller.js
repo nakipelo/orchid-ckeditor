@@ -7,4 +7,10 @@ application.register('ckeditor', class extends window.Controller {
 	connect() {
 		CKEDITOR.replace(this.idValue, this.optionsValue)
 	}
+
+	disconnect() {
+		if(CKEDITOR.instances[this.idValue]) {
+			CKEDITOR.instances[this.idValue].destroy()
+		}
+	}
 })
