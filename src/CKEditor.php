@@ -13,13 +13,11 @@ class CKEditor extends Field
 
     /** @var array  */
     protected $attributes = [
-
     ];
 
     public static function make(?string $name = null): Field
     {
-        Dashboard::registerResource('scripts', config('ckeditor.scripts'));
-        Dashboard::registerResource('scripts', route('platform.resource', ['ckeditor','ckeditor.js']));
+        Dashboard::registerResource('scripts', route('platform.resource', ['ckeditor', 'orchid_ckeditor.js']));
 
         return (new static())->name($name);
     }

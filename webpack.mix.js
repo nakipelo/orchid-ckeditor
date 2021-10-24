@@ -4,6 +4,6 @@ mix
 	.options({
 		processCssUrls: false
 	})
-	.js('resources/js/ckeditor_controller.js', 'ckeditor.js')
+	.js('resources/js/ckeditor.js', 'orchid_ckeditor.js')
 	.setPublicPath('public')
 	.version();

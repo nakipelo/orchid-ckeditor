@@ -3,6 +3,7 @@
   "description": "CKEditor editor for Laravel Orchid",
   "type": "library",
   "require": {
+    "ext-json": "*",
     "orchid/platform": "^10.13"
   },
   "license": "MIT",
