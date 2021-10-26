@@ -10,6 +10,9 @@ return [
 
     /**
      * Настройки редактора по-умолчанию
+     * Ниже приведены настройки для подключения файлового
+     * менеджера на основе "unisharp/laravel-filemanager:^2.2"
+     * 
      * @link https://ckeditor.com/docs/ckeditor4/latest/
      */
     'options' => [
