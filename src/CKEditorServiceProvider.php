@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Nakipelo\Orchid\CKEditor;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\View\Factory as ViewFactory;
 use Orchid\Support\Facades\Dashboard;
 
 class CKEditorServiceProvider extends ServiceProvider
@@ -12,7 +13,13 @@ class CKEditorServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Dashboard::addPublicDirectory('ckeditor', __DIR__ . '/../public');
-        
+
+        $this->callAfterResolving('view', static function (ViewFactory  $factory) {
+            $factory->composer('platform::app', static function () {
+                Dashboard::registerResource('scripts', orchid_mix('/orchid_ckeditor.js', 'ckeditor'));
+            });
+        });
+
         $this->offerPublishing();
     }
 

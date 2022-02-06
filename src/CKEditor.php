@@ -4,7 +4,6 @@ declare(strict_types=1);
 namespace Nakipelo\Orchid\CKEditor;
 
 use Orchid\Screen\Field;
-use Orchid\Support\Facades\Dashboard;
 
 class CKEditor extends Field
 {
@@ -17,8 +16,6 @@ class CKEditor extends Field
 
     public static function make(?string $name = null): Field
     {
-        Dashboard::registerResource('scripts', route('platform.resource', ['ckeditor', 'orchid_ckeditor.js']));
-
         return (new static())->name($name);
     }
 }
