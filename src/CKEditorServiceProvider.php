@@ -12,11 +12,13 @@ class CKEditorServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        Dashboard::addPublicDirectory('ckeditor', __DIR__ . '/../public');
+        $this->publishes([
+            __DIR__.'/../public' => public_path('vendor/ckeditor'),
+        ], ['ckeditor-assets', 'laravel-assets', 'orchid-assets']);
 
         $this->callAfterResolving('view', static function (ViewFactory  $factory) {
             $factory->composer('platform::app', static function () {
-                Dashboard::registerResource('scripts', orchid_mix('/orchid_ckeditor.js', 'ckeditor'));
+                Dashboard::registerResource('scripts', asset('/vendor/ckeditor/orchid_ckeditor.js'));
             });
         });
 
