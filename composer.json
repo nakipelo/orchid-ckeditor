@@ -4,7 +4,7 @@
   "type": "library",
   "require": {
     "ext-json": "*",
-    "orchid/platform": "^10.13|^11.0"
+    "orchid/platform": "^13.0"
   },
   "license": "MIT",
   "authors": [
