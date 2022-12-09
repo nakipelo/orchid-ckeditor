@@ -1,4 +1,3 @@
-import { Controller } from '@hotwired/stimulus'
 import { getEditorNamespace } from 'ckeditor4-integrations-common'
 import { useMeta } from "stimulus-use"
 
@@ -10,7 +9,7 @@ function typeReader(type) {
 	return type
 }
 
-export default class extends Controller {
+export default class extends window.Controller {
 	static metaNames = ['csrf_token']
 
 	static values = {
