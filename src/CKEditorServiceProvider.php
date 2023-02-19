@@ -36,7 +36,7 @@ class CKEditorServiceProvider extends ServiceProvider
 
 		$this->publishes([
 			__DIR__.'/../public' => public_path('vendor/nakipelo/orchid-ckeditor'),
-		]);
+		], ['ckeditor-assets', 'laravel-assets', 'orchid-assets']);
 
         $this->publishes([
             __DIR__.'/../config/config.php' => config_path('ckeditor.php'),
