@@ -12,11 +12,9 @@ class CKEditorServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        Dashboard::addPublicDirectory('ckeditor', __DIR__ . '/../public');
-
         $this->callAfterResolving('view', static function (ViewFactory  $factory) {
             $factory->composer('platform::app', static function () {
-                Dashboard::registerResource('scripts', orchid_mix('/orchid_ckeditor.js', 'ckeditor'));
+                Dashboard::registerResource('scripts', asset('vendor/nakipelo/orchid-ckeditor/orchid_ckeditor.js'));
             });
         });
 
@@ -25,7 +23,7 @@ class CKEditorServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->loadViewsFrom(__DIR__ . '/../views', 'ckeditor');
+        $this->loadViewsFrom(__DIR__.'/../views', 'ckeditor');
 
         $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'ckeditor');
     }
@@ -35,6 +33,10 @@ class CKEditorServiceProvider extends ServiceProvider
         if(! $this->app->runningInConsole()) {
             return;
         }
+
+		$this->publishes([
+			__DIR__.'/../public' => public_path('vendor/nakipelo/orchid-ckeditor'),
+		]);
 
         $this->publishes([
             __DIR__.'/../config/config.php' => config_path('ckeditor.php'),
