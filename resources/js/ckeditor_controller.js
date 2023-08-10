@@ -63,6 +63,19 @@ export default class extends Controller {
 					}
 				})
 
+				this.editor.on('mode', () => {
+					if(this.editor.mode === 'source') {
+						let editable = this.editor.editable()
+						editable.attachListener(editable, 'input', () => {
+							const data = this.editor.getData()
+
+							if (this.inputTarget.value !== data) {
+								this.inputTarget.value = data
+							}
+						})
+					}
+				})
+
 				this.editor.setData(this.inputTarget.value)
 			})
 		} catch (error) {
