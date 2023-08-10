@@ -25,7 +25,7 @@ export default class extends Controller {
 		},
 		editorUrl: {
 			type: String,
-			default: '//cdn.ckeditor.com/4.6.2/full/ckeditor.js',
+			default: '//cdn.ckeditor.com/4.22.1/full/ckeditor.js',
 		},
 	}
 
@@ -39,6 +39,8 @@ export default class extends Controller {
 	}
 
 	async connect() {
+		let csrfToken = this.csrfTokenMeta
+
 		try {
 			// Дожидаемся CKE
 			await getEditorNamespace(this.editorUrlValue)
@@ -49,7 +51,7 @@ export default class extends Controller {
 
 			this.editor = CKEDITOR[ method ](
 				this.editorTarget,
-				options
+				{...options, ...{fileTools_requestHeaders : { 'X-CSRF-Token': csrfToken } }}
 			)
 
 			this.editor.on('instanceReady', () => {
