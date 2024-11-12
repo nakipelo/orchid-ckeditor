@@ -15,7 +15,7 @@ class CKEditor extends Field
 		'options' => [],
 	];
 
-	public static function make(?string $name = null): CKEditor
+	public static function make(?string $name = null): static
 	{
 		return (new static())
 			->name($name)
