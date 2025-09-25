@@ -6,7 +6,7 @@ return [
      * Скрипты загрузки редактора
      * @link https://ckeditor.com/ckeditor-4/download/
      */
-    'editorUrl' => '//cdn.ckeditor.com/4.16.2/full/ckeditor.js',
+    'editorUrl' => '//cdn.ckeditor.com/4.22.1/full/ckeditor.js',
 
     /**
      * Настройки редактора по-умолчанию

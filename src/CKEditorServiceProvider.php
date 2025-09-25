@@ -15,6 +15,7 @@ class CKEditorServiceProvider extends ServiceProvider
         $this->callAfterResolving('view', static function (ViewFactory  $factory) {
             $factory->composer('platform::app', static function () {
                 Dashboard::registerResource('scripts', asset('vendor/nakipelo/orchid-ckeditor/orchid_ckeditor.js'));
+                Dashboard::registerResource('stylesheets', asset('vendor/nakipelo/orchid-ckeditor/orchid_ckeditor.css'));
             });
         });
 
