@@ -232,5 +232,5 @@ MIT License. См. файл [LICENSE](LICENSE) для подробностей.
 
 ## English Documentation
 
-- [README in English](README_EN.md)
-- [Changelog in English](CHANGELOG_EN.md)
+- [README in English](README.md)
+- [Changelog in English](CHANGELOG.md)

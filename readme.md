@@ -224,7 +224,7 @@ If you have questions or suggestions, please create an [Issue](https://github.co
 
 ## Changelog
 
-See [CHANGELOG_EN.md](CHANGELOG_EN.md) for a list of changes.
+See [CHANGELOG.en.md](CHANGELOG.en.md) for a list of changes.
 
 ---
 
@@ -232,5 +232,5 @@ See [CHANGELOG_EN.md](CHANGELOG_EN.md) for a list of changes.
 
 ## Русская Документация
 
-- [README на русском](README.md)
-- [Changelog на русском](CHANGELOG.md)
+- [README на русском](README.ru.md)
+- [Changelog на русском](CHANGELOG.ru.md)

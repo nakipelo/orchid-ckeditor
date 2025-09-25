@@ -117,3 +117,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Removed** - for removed features
 - **Fixed** - for bug fixes
 - **Security** - for vulnerability fixes
+
+---
+
+## Русская Документация
+
+- [README на русском](README.ru.md)
+- [Changelog на русском](CHANGELOG.ru.md)

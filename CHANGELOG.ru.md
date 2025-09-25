@@ -117,3 +117,10 @@
 - **Удалено** - для удаленных функций
 - **Исправлено** - для исправления ошибок
 - **Безопасность** - для исправлений уязвимостей
+
+---
+
+## English Documentation
+
+- [README in English](README.md)
+- [Changelog in English](CHANGELOG.md)
