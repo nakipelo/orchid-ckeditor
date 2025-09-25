@@ -226,7 +226,7 @@ If you have questions or suggestions, please create an [Issue](https://github.co
 
 ## Changelog
 
-See [CHANGELOG.en.md](CHANGELOG.en.md) for a list of changes.
+See [CHANGELOG.md](CHANGELOG.md) for a list of changes.
 
 ---
 
