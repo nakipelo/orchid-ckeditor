@@ -6,10 +6,12 @@
 
 CKEditor 4 integration with Laravel Orchid Platform for creating rich text editors in the admin panel.
 
+> **Important**: This package uses CKEditor 4.22.1, which is the last free version. All subsequent versions (4.23+) are LTS versions that require a commercial license purchase.
+
 ## Features
 
 - ✅ Full integration with Laravel Orchid Platform
-- ✅ CKEditor 4 with file upload support
+- ✅ CKEditor 4.22.1 (last free version) with file upload support
 - ✅ Laravel File Manager integration
 - ✅ Stimulus controller for modern JavaScript
 - ✅ Customizable editor options
@@ -96,7 +98,7 @@ return [
     /**
      * URL for loading CKEditor
      */
-    'editorUrl' => '//cdn.ckeditor.com/4.16.2/full/ckeditor.js',
+    'editorUrl' => '//cdn.ckeditor.com/4.22.1/full/ckeditor.js',
 
     /**
      * Default editor options
@@ -228,7 +230,7 @@ See [CHANGELOG.en.md](CHANGELOG.en.md) for a list of changes.
 
 ---
 
-**Note**: This package uses CKEditor 4. For CKEditor 5 usage, consider other solutions or create a fork with updated integration.
+**Note**: This package uses CKEditor 4.22.1, which is the last free version. All subsequent versions (4.23+) are LTS versions that require a commercial license purchase. For CKEditor 5 usage, consider other solutions or create a fork with updated integration.
 
 ## Русская Документация
 

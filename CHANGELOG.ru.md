@@ -5,6 +5,21 @@
 Формат основан на [Keep a Changelog](https://keepachangelog.com/ru/1.0.0/),
 и этот проект придерживается [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.1.6] - 2024-12-19
+
+### Добавлено
+- Поддержка компиляции CSS в webpack.mix.js
+- Регистрация CSS стилей в service provider
+- Добавлена директория resources/css/ с файлом ckeditor.css
+
+### Изменено
+- Обновлен CKEditor с версии 4.16.2 до 4.22.1 (последняя бесплатная версия)
+- Обновлен CDN URL для использования CKEditor 4.22.1
+- Обновлена зависимость в package.json до ckeditor4 ^4.22.1
+
+### Примечание
+- CKEditor 4.22.1 является последней бесплатной версией. Все последующие версии (4.23+) являются LTS версиями, которые требуют покупки коммерческой лицензии.
+
 ## [5.1.3] - 2024-11-13
 
 ### Исправлено
@@ -122,5 +137,5 @@
 
 ## English Documentation
 
-- [README in English](README.md)
+- [README in English](readme.md)
 - [Changelog in English](CHANGELOG.md)

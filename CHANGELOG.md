@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [5.1.6] - 2024-12-19
+
+### Added
+- CSS compilation support in webpack.mix.js
+- CSS stylesheet registration in service provider
+- Added resources/css/ directory with ckeditor.css
+
+### Changed
+- Updated CKEditor from 4.16.2 to 4.22.1 (last free version)
+- Updated CDN URL to use CKEditor 4.22.1
+- Updated package.json dependency to ckeditor4 ^4.22.1
+
+### Note
+- CKEditor 4.22.1 is the last free version. All subsequent versions (4.23+) are LTS versions that require a commercial license purchase.
+
 ## [5.1.3] - 2024-11-13
 
 ### Fixed
