@@ -1,7 +1,7 @@
 @component($typeForm, get_defined_vars())
     <div data-controller="ckeditor"
          data-ckeditor-id-value="{{ $id }}"
-         data-ckeditor-options-value="{{ json_encode($options, flags: JSON_FORCE_OBJECT) }}"
+         data-ckeditor-options-value="{{ json_encode($options) }}"
          data-ckeditor-editor-url-value="{{ config('ckeditor.editorUrl') }}"
     >
         <div data-ckeditor-target="editor"></div>
